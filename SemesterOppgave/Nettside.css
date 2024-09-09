@@ -25,16 +25,19 @@
 nav{
     padding: 1rem;
     display:flex;
+    justify-content: center;
+    align-items: center;
     background-color:#01A7C2;
     color: white;
     text-align: center;
+    font-size: 2rem;
     
 }
 .ham-menu{
     height: 50px;
     width: 50px;
-    margin-left:10px;
-    position: relative;
+    left: 1rem  ;
+    position: absolute;
 }
 .ham-menu span{
     height: 5px;
@@ -79,7 +82,7 @@ nav{
 .mBarOm{
     color: white;
     margin: 30px;
-    font-size: 2rem;
+    font-size: 2rem;    
 }
 .mBarBS{
     color: white;
