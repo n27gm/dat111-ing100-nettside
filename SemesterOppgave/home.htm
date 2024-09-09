@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy CSS Demonstration</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #282a36;
+            margin: 0;
+            padding: 0;
+            color: #f8f8f2;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #44475a;
+            color: #50fa7b;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, transparent, #282a36 80%);
+            transform: translateX(-50%);
+            pointer-events: none;
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: translateX(-50%) scale(0.9);
+            }
+
+            50% {
+                transform: translateX(-50%) scale(1.1);
+            }
+
+            100% {
+                transform: translateX(-50%) scale(0.9);
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 3rem auto;
+            background-color: #44475a;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            color: #ff79c6;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #6272a4;
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            border-left: 4px solid #6272a4;
+            padding-left: 10px;
+            transition: all 0.3s;
+        }
+
+        p:hover {
+            background-color: #6272a4;
+            color: #282a36;
+            transform: translateX(10px);
+        }
+
+        .highlight {
+            animation: highlightFade 1.5s infinite alternate;
+        }
+
+        @keyframes highlightFade {
+            0% {
+                background-color: #bd93f9;
+                color: #282a36;
+            }
+
+            100% {
+                background-color: #ff79c6;
+                color: #f8f8f2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Fancy CSS Animation Demo</h1>
+    </header>
+    <div class="container">
+        <h2>Animations & Effects</h2>
+        <p>Welcome to the world of fancy CSS! This is a demonstration of various CSS animations and effects. Hover over
+            this paragraph to see a transition effect.</p>
+        <p class="highlight">This paragraph is animated with a color fade effect using keyframes.</p>
+    </div>
+</body>
+
+</html>
