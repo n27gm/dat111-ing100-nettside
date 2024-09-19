@@ -44,64 +44,6 @@ nav {
     font-weight: 300;
     font-style: italic;
     padding: 30px;
-
-}
-.Info{
-    text-align: center;
-    font-size: 1rem;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: italic;
-
-}
-.AA{ 
-    margin:auto;
-    text-align: center;
-    width: 50%;
-    font-size: 1rem;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: italic;
-    
-}
-.BB{
-    text-align: center;
-    font-size: 1rem;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: italic;
-    padding: 10px;
-
-}
-.CC{
-    border-style:inset;
-    margin-left: 25%;
-    margin-right: 25%;
-    border-radius: 5%;
-    font-size: 1rem;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: italic;
-    li:not(:last-child) {
-        margin-bottom: 10px;
-    }
-
-}
-.DD{
-    margin:auto;
-    text-align: center;
-    width: 50%;
-    font-size: 1rem;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: italic;
-    padding: 20px;
-
 }
 .HomeB{
     height: 50px;
@@ -124,6 +66,7 @@ nav {
     background-color: #1e1e1ed8;
     color: white;
     padding: 1.2rem;
+    margin-top: 100%;
 }
 .ham-menu{
     height: 50px;
